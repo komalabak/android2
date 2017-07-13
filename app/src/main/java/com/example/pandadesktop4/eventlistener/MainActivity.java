@@ -6,9 +6,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    Button b1,b2;
+    Button b1;
     private ProgressDialog progress;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,24 +18,22 @@ public class MainActivity extends AppCompatActivity {
 
 
         b1 = (Button) findViewById(R.id.button);
-        b2 = (Button) findViewById(R.id.button2);
+       // b2 = (Button) findViewById(R.id.button2);
 
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                TextView txt = (TextView) findViewById(R.id.textView);
-                txt.setTextSize(25);
+           //     TextView txt = (TextView) findViewById(R.id.textView);
+         //       txt.setTextSize(25);
+                Toast.makeText(MainActivity.this, "Good Afternoon", Toast.LENGTH_SHORT).show();
             }
         });
 
 
-        b2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                TextView txt = (TextView) findViewById(R.id.textView);
-                txt.setTextSize(55);
-            }
-        });
-
+       // b2.setOnClickListener(new View.OnClickListener() {
+         //   @Override
+           // public void onClick(View view) {
+             //   TextView txt = (TextView) findViewById(R.id.textView);
+          //
     }
 }
